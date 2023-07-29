@@ -181,6 +181,8 @@ Example Response:
 ]
 ```
 
+</br>
+
 # Terms and Conditions
 
 - The Bible API provides access to the English KJV, Oromo, and Amhara versions of the Bible. The complete data of the Bible is owned by us, and we offer it as an API for public use.
