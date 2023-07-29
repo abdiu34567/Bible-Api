@@ -23,19 +23,23 @@ GET https://bible-api-five.vercel.app/api/listbookids
 Example Response:
 
 ```json
-{
-  "1": "GEN",
-  "2": "EXO",
-  "3": "LEV",
-  "4": "NUM",
-  "5": "DEU",
-  "6": "JOS",
-  "7": "JDG",
-  "8": "RUT",
-  "9": "1SA",
-  "10": "2SA"
-  ...
-}
+[
+  {
+    "books": {
+      "1": "GEN",
+      "2": "EXO",
+      "3": "LEV",
+      "4": "NUM",
+      "5": "DEU",
+      "6": "JOS",
+      "7": "JDG",
+      "8": "RUT",
+      "9": "1SA",
+      "10": "2SA"
+      //...
+    }
+  }
+]
 ```
 
 ### 2. Get Book Information
@@ -80,7 +84,7 @@ Description: This endpoint allows you to retrieve all the verses from a specific
 
 Parameters:
 
-- `:version` (string) - The version of the Bible (e.g., "kjvs", "oromos", "amharas")
+- `:version` (string) - The version of the Bible (e.g., "kjv", "oromo", "amhara")
 - `:bookid` (string) - The ID of the book (e.g., "GEN" for Genesis, "EXO" for Exodus, etc.)
 - `:chapter` (integer) - The chapter number
 
@@ -118,7 +122,7 @@ Description: This endpoint allows you to retrieve a single verse from a specific
 
 Parameters:
 
-- `:version` (string) - The version of the Bible (e.g., "kjvs", "oromos", "amharas")
+- `:version` (string) - The version of the Bible (e.g., "kjv", "oromo", "amhara")
 - `:bookid` (string) - The ID of the book (e.g., "GEN" for Genesis, "EXO" for Exodus, etc.)
 - `:chapter` (integer) - The chapter number
 - `:versenum` (integer) - The verse number
@@ -148,7 +152,7 @@ Description: This endpoint allows you to search for verses containing specific t
 
 Parameters:
 
-- `:version` (string) - The version of the Bible (e.g., "kjvs", "oromos", "amharas")
+- `:version` (string) - The version of the Bible (e.g., "kjv", "oromo", "amhara")
 - `q` (string) - The search query. The API will search for the query text in the verses.
 
 Example Request:
@@ -176,3 +180,23 @@ Example Response:
   //...
 ]
 ```
+
+# Terms and Conditions
+
+- The Bible API provides access to the English KJV, Oromo, and Amhara versions of the Bible. The complete data of the Bible is owned by us, and we offer it as an API for public use.
+
+- Developers are welcome to use and integrate the API into their applications.
+
+- Contributions to improve and enhance the API are encouraged and appreciated.
+
+- If you encounter any issues or have any questions related to the API, please feel free to contact ( abdiurgessa9@gmail.com | [Telegram](https://t.me/Me_abd) ) us or open an issue on our GitHub repository.
+
+- While we strive to provide a reliable and accurate API, we do not guarantee its continuous availability or error-free performance.
+
+- Users are responsible for complying with copyright and licensing restrictions when using the Bible data in their applications.
+
+- We reserve the right to modify the API's behavior, features, or endpoints at our discretion.
+
+- Usage of the Bible API is subject to the acceptance of these terms and conditions.
+
+Thank you for using the Bible API. We hope it serves as a valuable resource for your applications and helps spread the Word of God.
