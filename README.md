@@ -4,7 +4,7 @@ Welcome to the Bible API! This API provides access to the English KJV, Oromo, an
 
 ## Base URL
 
-The base URL for the API is: `https://bible-api-five.vercel.app/`
+The base URL for the API is: `bible-api-kappa.vercel.app/`
 
 ## Endpoints
 
@@ -17,7 +17,7 @@ Description: This endpoint allows you to retrieve a list of all book IDs availab
 Example Request:
 
 ```
-GET https://bible-api-five.vercel.app/api/listbookids
+GET bible-api-kappa.vercel.app/api/listbookids
 ```
 
 Example Response:
@@ -55,7 +55,7 @@ Parameters:
 Example Request:
 
 ```
-GET https://bible-api-five.vercel.app/api/bookid/info/GEN
+GET bible-api-kappa.vercel.app/api/bookid/info/GEN
 ```
 
 Example Response:
@@ -91,7 +91,7 @@ Parameters:
 Example Request:
 
 ```
-GET https://bible-api-five.vercel.app/api/verses/english/GEN/50
+GET bible-api-kappa.vercel.app/api/verses/english/GEN/50
 ```
 
 Example Response:
@@ -130,7 +130,7 @@ Parameters:
 Example Request:
 
 ```
-GET https://bible-api-five.vercel.app/api/verses/oromo/GEN/1/1
+GET bible-api-kappa.vercel.app/api/verses/oromo/GEN/1/1
 ```
 
 Example Response:
@@ -158,7 +158,7 @@ Parameters:
 Example Request:
 
 ```
-GET https://bible-api-five.vercel.app/api/search/english/verse?q=earth
+GET bible-api-kappa.vercel.app/api/search/english/verse?q=earth
 ```
 
 Example Response:
