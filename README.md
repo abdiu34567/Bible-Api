@@ -44,7 +44,7 @@ Example Response:
 
 ### 2. Get Book Information
 
-Endpoint: `GET /bookid/info/:bookid`
+Endpoint: `GET /book/info/:bookid`
 
 Description: This endpoint provides information regarding how many total chapters the book includes and how many verses each chapter includes.
 
@@ -55,7 +55,7 @@ Parameters:
 Example Request:
 
 ```
-GET bible-api-kappa.vercel.app/api/bookid/info/GEN
+GET bible-api-kappa.vercel.app/api/book/info/GEN
 ```
 
 Example Response:
@@ -91,7 +91,7 @@ Parameters:
 Example Request:
 
 ```
-GET bible-api-kappa.vercel.app/api/verses/english/GEN/50
+GET bible-api-kappa.vercel.app/api/verses/kjv/GEN/50
 ```
 
 Example Response:
@@ -130,7 +130,7 @@ Parameters:
 Example Request:
 
 ```
-GET bible-api-kappa.vercel.app/api/verses/oromo/GEN/1/1
+GET bible-api-kappa.vercel.app/api/verses/kjv/GEN/2/10
 ```
 
 Example Response:
@@ -158,7 +158,7 @@ Parameters:
 Example Request:
 
 ```
-GET bible-api-kappa.vercel.app/api/search/english/verse?q=earth
+GET bible-api-kappa.vercel.app/api/search/kjv/verse?q=earth
 ```
 
 Example Response:

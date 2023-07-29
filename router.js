@@ -13,7 +13,7 @@ router.get("/", (req, res) => {
   );
 });
 router.get("/listbookids", listBookIds);
-router.get("/bookid/info/:bookid", bookInfo);
+router.get("/book/info/:bookid", bookInfo);
 router.get("/verses/:version/:bookid/:chapter", sendVerse);
 router.get("/verses/:version/:bookid/:chapter/:versenum", sendSingleVerse);
 router.get("/search/:version/verse", searchForVerses);
