@@ -11,6 +11,7 @@ const singleVerseModel = async (collection, book, chapter, verseNum) => {
         $regex: `(^|[^0-9])${verseNum}(?![0-9])`,
       },
     })
+    .select("-__v -_id")
     .lean();
 };
 

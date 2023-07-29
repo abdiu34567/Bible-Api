@@ -11,7 +11,7 @@ const schema = new mongoose.Schema({
 const model = mongoose.model("chapters", schema);
 
 const bookInfoModel = async (bookid) => {
-  return await model.findOne({ book: bookid }).lean();
+  return await model.findOne({ book: bookid }).select("-__v -_id").lean();
 };
 
 module.exports = bookInfoModel;

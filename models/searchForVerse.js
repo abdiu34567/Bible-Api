@@ -11,6 +11,7 @@ const searchForVerseModel = async (collection, query) => {
         $regex: searchRegex,
       },
     })
+    .select("-__v -_id")
     .limit(100)
     .lean();
 };

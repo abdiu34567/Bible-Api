@@ -9,7 +9,7 @@ const Schema = new mongoose.Schema({
 const model = mongoose.model("bookid", Schema);
 
 const listBooks = async () => {
-  return await model.find().lean();
+  return await model.find().select("-__v -_id").lean();
 };
 
 module.exports = listBooks;

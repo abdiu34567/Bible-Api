@@ -5,8 +5,7 @@ const bookInfo = async (req, res) => {
     const bookId = req.params.bookid;
     const data = await bookInfoModel(bookId);
     if (!data) return res.status(404).send({ error: "Book Id not found" });
-    const { book, totchapter, chapters } = data;
-    res.status(200).send({ book, totchapter, chapters });
+    res.status(200).send(data);
   } catch (error) {
     res.status(500).send({ error: "Internal Server Error" });
   }

@@ -5,11 +5,11 @@ const oromoModel = require("../models/schema/oromomodel");
 const models = (collection) => {
   let model;
 
-  if (collection === "kjvs") {
+  if (collection === "kjv") {
     model = kjvModel;
-  } else if (collection === "amharas") {
+  } else if (collection === "amhara") {
     model = amharaModel;
-  } else if (collection === "oromos") {
+  } else if (collection === "oromo") {
     model = oromoModel;
   }
 
