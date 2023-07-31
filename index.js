@@ -19,7 +19,7 @@ const app = express(); // create express app
 app.use(cors()); // allow any origin
 app.use(express.json()); // parse json
 
-app.use("/api", router);
+app.use("/", router);
 
 // start server
 const PORT = process.env.PORT || 3000; // set port

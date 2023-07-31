@@ -7,15 +7,15 @@ const searchForVerses = require("./api/searchforverses");
 
 const router = express.Router();
 
-router.get("/", (req, res) => {
+router.get("/api/v1/", (req, res) => {
   res.send(
     "Welcome, to Our Bible Api, which supports Oromo, Amharic, and English"
   );
 });
-router.get("/listbookids", listBookIds);
-router.get("/book/info/:bookid", bookInfo);
-router.get("/verses/:version/:bookid/:chapter", sendVerse);
-router.get("/verses/:version/:bookid/:chapter/:versenum", sendSingleVerse);
-router.get("/search/:version/verse", searchForVerses);
+router.get("/api/v1/listbookids", listBookIds);
+router.get("/api/v1/book/info/:bookid", bookInfo);
+router.get("/api/v1/verses/:version/:bookid/:chapter", sendVerse);
+router.get("/api/v1/verses/:version/:bookid/:chapter/:versenum", sendSingleVerse);
+router.get("/api/v1/search/:version/verse", searchForVerses);
 
 module.exports = router;
